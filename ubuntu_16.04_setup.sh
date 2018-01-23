@@ -1,5 +1,4 @@
 yes | sudo apt update
-yes | sudo apt upgrade
 
 NGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 
