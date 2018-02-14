@@ -10,9 +10,6 @@ yes | yum-config-manager --add-repo https://download.docker.com/linux/centos/doc
 #yum package index update
 yes | yum makecache fast
 
-#search can install version
-yum list docker-ce.x86_64 --showduplicates | sort -r
-
 #install
 yes | yum install docker-ce-17.12.0.ce-1.el7.centos
 yes | sudo yum install docker-ce
@@ -26,3 +23,6 @@ yes | docker run hello-world
 #not needing sudo
 yes | groupadd docker
 yes | usermod -aG docker $USER
+
+#docker auto run
+systemctl enable docker
