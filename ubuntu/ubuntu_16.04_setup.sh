@@ -19,3 +19,4 @@ yes | sudo apt install gnome-vim
 
 yes | sudo apt install tree
 
+sh ../common/*
